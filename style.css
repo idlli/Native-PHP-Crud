@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;600;800&display=swap');
+body {
+    font-family: Heebo;
+    background: #f1f2f6;
+    margin: 0;
+}
+
+.page-header {
+    padding: 28px;
+    background: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 26px;
+    text-align: left;
+}
+
+.page-header span {
+    font-size: 15px;
+    background: #eee;
+    padding: 12px 16px;
+    border-radius: 5px;
+}
+
+.lname {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 5px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.fname {
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0;
+}
+
+.my-table {
+    background: white;
+    border-radius: 3px;
+    /* padding: 15px; */
+    margin: 20px auto;
+    border-spacing: 0;
+}
+
+.my-table thead tr {
+    overflow: hidden;
+}
+
+.my-table thead tr th {
+    padding: 14px 50px 14px 14px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid #dfe4ea;
+}
+
+.my-table tbody td {
+    padding: 12px 14px 12px 14px;
+}
+
+.my-table tbody td a {color: white;border-radius: 6px;margin: 0 3px;padding: 2px 12px;text-decoration: none;}
+
+.my-table tbody tr:nth-child(even) {
+    background-color: #f1f2f6;
+}
+
+.btn-read {
+    background: #12CBC4;
+}
+
+.btn-edit {
+    background: #0652DD;
+}
+
+.btn-delete {
+    background: #ED4C67;
+}
+
+.mid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mid-buttons {
+    margin: 40px 0;
+}
+
+.mid-buttons a {
+    color: white;
+    border-radius: 5px;
+    margin: 0 8px;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.btn-add {
+    background: #0097e6;
+}
+
+.mid-buttons a i {
+    padding-right: 10px;
+}
+
+/* Create Page */
+.my-stable {
+    margin: 40px auto;
+    border-spacing: 0;
+}
+
+.my-stable input {
+    padding: 12px 50px 12px 14px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #dfe4ea;
+    font-family: Heebo;
+    font-size: 14px;
+    min-width: 270px;
+}
+
+.my-stable tr > td:first-of-type {padding-right: 30px;}
+
+.my-stable select {
+    padding: 14px 50px 14px 14px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #dfe4ea;
+    min-width: 336px;
+}
+
+.btn-save {
+    background: #1e90ff;
+}
+
+.my-stable a, .my-stable input[type="submit"] {
+    color: white;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 10px 24px;
+    text-decoration: none;
+    border: 0;
+    min-width: auto;
+}
+
+.my-stable tr:last-of-type td:last-of-type {
+    padding: 20px 0;
+}
+
+.btn-back {
+    background: #ff4757;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+    background: #ddd;
+    width: 24px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.active {
+    background: #0097e6 !important;
+}
+
+.active a {
+    color: #fff;
+}
+
+.pagination li a {
+    text-decoration: none;
+}
+
+.my-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 20px 0;
+}
+
+.name a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0097e6;
+}
+
+.etud-card {
+    height: 115px;
+    background: white;
+    display: grid;
+    grid-template-columns: 33% 62%;
+    padding: 14px 30px 14px 14px;
+    grid-gap: 5%;
+    position: relative;
+    border-radius: 4px;
+}
+
+.etud-card:hover {
+    box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.etud-img {
+    height: 115px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.etud-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.etud-info {
+    display: flex;
+    align-items: center;
+}
+
+.etud-buttons {
+    position: absolute;
+    top: -12px;
+    right: 12px;
+}
+
+.etud-buttons a {
+    font-size: 11px;
+    margin: 0 3px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    width: 17px;
+    display: inline-block;
+}
+
+.edit {
+    background: #4cd137 !important;
+}
+
+.etud-buttons a:after {
+    font-family: 'FontAwesome';
+}
+
+.edit:after {
+    content: '\f4ff';
+}
+
+.delete {
+    background: #e84118 !important;
+}
+
+.delete:after {
+    content: '\f235';
+}
+
+.etud-details {
+    color: #353b48;
+}
+
+.etud-details p {
+    margin: 8px 0;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.etud-details p:before {
+    font-family: 'FontAwesome';
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+.name:before {
+    content: '\f007';
+}
+
+.cin:before {
+    content: '\f507';
+    padding-right: 5px !important;
+}
+
+.diplome:before {
+    content: '\f0a3';
+}
+
+.overflow-hidden {
+    margin: 25px 0;
+}
+
+.log-out {
+    text-decoration: none;
+    color: #e84118;
+    background: rgb(232 65 24 / 15%);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 15px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+.log-out:after {
+    content: '\f2f5';
+    font-family: fontawesome;
+    padding-left: 10px;
+}
